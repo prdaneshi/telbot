@@ -28,12 +28,13 @@ def greet_user(`update: Update, context: CallbackContext`):
     update.message.reply_text('hello')
 '''
 
-conn = psycopg2.connect(host="localhost", database="telbotdb", user="telbot", password="telbotpass")
+
 def run(updater):
     if mode == 'local':
         try:
             updater.start_polling()
             print("Connecting to Database")
+            global conn
             conn = psycopg2.connect(host="localhost", database="telbotdb", user="telbot", password="telbotpass")
             print("Connected")
         except(Exception, psycopg2.DatabaseError) as error:

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d774178f-30ff-4db2-a8e5-85b1b9bc13e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,7 @@
       <workItem from="1587481552765" duration="1191000" />
       <workItem from="1589696280322" duration="445000" />
       <workItem from="1591088404153" duration="9936000" />
-      <workItem from="1591171375426" duration="9765000" />
+      <workItem from="1591171375426" duration="10102000" />
     </task>
     <task id="LOCAL-00001" summary="add worktype">
       <created>1591174139363</created>
@@ -144,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591186041101</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="edit requirements.txt">
+      <created>1591186464959</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1591186464959</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,7 +184,8 @@
     <MESSAGE value="add worktype" />
     <MESSAGE value="add webhook" />
     <MESSAGE value="add Procfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Procfile" />
+    <MESSAGE value="edit requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit requirements.txt" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="42" key="#Deployment" timestamp="1591172079600">
@@ -191,10 +200,10 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.770@0.0.1280.770" timestamp="1591186002746" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1591186039808">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1591186464050">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.770@0.0.1280.770" timestamp="1591186039808" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.770@0.0.1280.770" timestamp="1591186464050" />
     <state width="508" height="442" key="Diff.GoToChangePopup" timestamp="1591183686768">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
@@ -251,10 +260,10 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="141" y="16" key="SettingsEditor/0.0.1280.770@0.0.1280.770" timestamp="1591172066285" />
-    <state x="169" y="113" key="Vcs.Push.Dialog.v2" timestamp="1591186073135">
+    <state x="169" y="113" key="Vcs.Push.Dialog.v2" timestamp="1591186471777">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="169" y="113" key="Vcs.Push.Dialog.v2/0.0.1280.770@0.0.1280.770" timestamp="1591186073135" />
+    <state x="169" y="113" key="Vcs.Push.Dialog.v2/0.0.1280.770@0.0.1280.770" timestamp="1591186471777" />
     <state x="449" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591174167199">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
