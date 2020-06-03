@@ -56,13 +56,13 @@ def run(updater):
                                   url_path=token)
             updater.bot.set_webhook("https://{}.herokuapp.com/{}".format(HEROKU_APP_NAME, token))
 
-            print("Connecting to Database")
+            print("Connecting to host Database")
             conn = psycopg2.connect(host="ec2-54-243-252-232.compute-1.amazonaws.com",
                                     database="deni53okj1kfg0",
                                     user="slwywneiwysvah",
                                     password="81f78c5ae27dcbbf381e572dfb257b9a41c01c2f3952a3280fad77cb70e7ff59")
             cur = conn.cursor()
-            print("Connected")
+            print("Connected host database")
         except(Exception, psycopg2.DatabaseError) as error:
             print(error)
     else:
