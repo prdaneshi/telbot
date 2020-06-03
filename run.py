@@ -29,13 +29,21 @@ def greet_user(`update: Update, context: CallbackContext`):
 '''
 
 
+class Connect:
+    def __init__(self, host, database, user, password):
+        self = psycopg2.connect(host=host, database=database, user=user, password=password)
+
+
+
+
 def run(updater):
+    global conn, cur
     if mode == 'local':
         try:
             updater.start_polling()
             print("Connecting to Database")
-            global conn
             conn = psycopg2.connect(host="localhost", database="telbotdb", user="telbot", password="telbotpass")
+            cur = conn.cursor()
             print("Connected")
         except(Exception, psycopg2.DatabaseError) as error:
             print(error)
@@ -58,7 +66,9 @@ def run(updater):
             print(error)
     else:
         logger.error("Mode is has not een set")
-cur = conn.cursor()
+
+
+
 
 
 # ------------------------------------------------------------------

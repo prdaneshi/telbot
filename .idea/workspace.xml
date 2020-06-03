@@ -122,7 +122,7 @@
       <workItem from="1587481552765" duration="1191000" />
       <workItem from="1589696280322" duration="445000" />
       <workItem from="1591088404153" duration="9936000" />
-      <workItem from="1591171375426" duration="10102000" />
+      <workItem from="1591171375426" duration="13322000" />
     </task>
     <task id="LOCAL-00001" summary="add worktype">
       <created>1591174139363</created>
@@ -152,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591186464959</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="global conn (wrong way but no choice)">
+      <created>1591186726482</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1591186726482</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +192,8 @@
     <MESSAGE value="add webhook" />
     <MESSAGE value="add Procfile" />
     <MESSAGE value="edit requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit requirements.txt" />
+    <MESSAGE value="global conn (wrong way but no choice)" />
+    <option name="LAST_COMMIT_MESSAGE" value="global conn (wrong way but no choice)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="42" key="#Deployment" timestamp="1591172079600">
@@ -200,10 +208,10 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.770@0.0.1280.770" timestamp="1591186002746" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1591186464050">
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1591186725665">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.770@0.0.1280.770" timestamp="1591186464050" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.770@0.0.1280.770" timestamp="1591186725665" />
     <state width="508" height="442" key="Diff.GoToChangePopup" timestamp="1591183686768">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
@@ -216,22 +224,22 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="382" y="174" key="EnvironmentVariablesDialog/0.0.1280.770@0.0.1280.770" timestamp="1591186001823" />
-    <state width="748" height="182" key="GridCell.Tab.0.bottom" timestamp="1591183309429">
+    <state width="1236" height="187" key="GridCell.Tab.0.bottom" timestamp="1591189918690">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="748" height="182" key="GridCell.Tab.0.bottom/0.0.1280.770@0.0.1280.770" timestamp="1591183309429" />
-    <state width="748" height="182" key="GridCell.Tab.0.center" timestamp="1591183309428">
+    <state width="1236" height="187" key="GridCell.Tab.0.bottom/0.0.1280.770@0.0.1280.770" timestamp="1591189918690" />
+    <state width="1236" height="187" key="GridCell.Tab.0.center" timestamp="1591189918690">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="748" height="182" key="GridCell.Tab.0.center/0.0.1280.770@0.0.1280.770" timestamp="1591183309428" />
-    <state width="748" height="182" key="GridCell.Tab.0.left" timestamp="1591183309428">
+    <state width="1236" height="187" key="GridCell.Tab.0.center/0.0.1280.770@0.0.1280.770" timestamp="1591189918690" />
+    <state width="1236" height="187" key="GridCell.Tab.0.left" timestamp="1591189918690">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="748" height="182" key="GridCell.Tab.0.left/0.0.1280.770@0.0.1280.770" timestamp="1591183309428" />
-    <state width="748" height="182" key="GridCell.Tab.0.right" timestamp="1591183309428">
+    <state width="1236" height="187" key="GridCell.Tab.0.left/0.0.1280.770@0.0.1280.770" timestamp="1591189918690" />
+    <state width="1236" height="187" key="GridCell.Tab.0.right" timestamp="1591189918690">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="748" height="182" key="GridCell.Tab.0.right/0.0.1280.770@0.0.1280.770" timestamp="1591183309428" />
+    <state width="1236" height="187" key="GridCell.Tab.0.right/0.0.1280.770@0.0.1280.770" timestamp="1591189918690" />
     <state width="1236" height="159" key="GridCell.Tab.1.bottom" timestamp="1591105602277">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
@@ -260,10 +268,10 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="141" y="16" key="SettingsEditor/0.0.1280.770@0.0.1280.770" timestamp="1591172066285" />
-    <state x="169" y="113" key="Vcs.Push.Dialog.v2" timestamp="1591186471777">
+    <state x="169" y="113" key="Vcs.Push.Dialog.v2" timestamp="1591186737124">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="169" y="113" key="Vcs.Push.Dialog.v2/0.0.1280.770@0.0.1280.770" timestamp="1591186471777" />
+    <state x="169" y="113" key="Vcs.Push.Dialog.v2/0.0.1280.770@0.0.1280.770" timestamp="1591186737124" />
     <state x="449" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591174167199">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
@@ -277,7 +285,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/telbot$run.coverage" NAME="run Coverage Results" MODIFIED="1591183031793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/telbot$run.coverage" NAME="run Coverage Results" MODIFIED="1591189918663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/My_Game$run.coverage" NAME="run Coverage Results" MODIFIED="1591105587190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
