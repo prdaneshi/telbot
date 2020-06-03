@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d774178f-30ff-4db2-a8e5-85b1b9bc13e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,7 @@
       <workItem from="1587481552765" duration="1191000" />
       <workItem from="1589696280322" duration="445000" />
       <workItem from="1591088404153" duration="9936000" />
-      <workItem from="1591171375426" duration="15576000" />
+      <workItem from="1591171375426" duration="16308000" />
     </task>
     <task id="LOCAL-00001" summary="add worktype">
       <created>1591174139363</created>
@@ -179,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591190736674</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="&quot;host&quot; added to str">
+      <created>1591193833216</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591193833216</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +224,8 @@
     <MESSAGE value="global conn and cur :(" />
     <MESSAGE value="just added print in host database connection" />
     <MESSAGE value="added start handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="added start handler" />
+    <MESSAGE value="&quot;host&quot; added to str" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;host&quot; added to str" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="42" key="#Deployment" timestamp="1591172079600">
@@ -227,14 +236,14 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="0" y="42" key="#Notifications/0.0.1280.770@0.0.1280.770" timestamp="1591183536809" />
-    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591193682178">
+    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591194422599">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.770@0.0.1280.770" timestamp="1591193682178" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1591190735951">
+    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.770@0.0.1280.770" timestamp="1591194422599" />
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1591193832567">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.770@0.0.1280.770" timestamp="1591190735951" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.770@0.0.1280.770" timestamp="1591193832567" />
     <state width="508" height="442" key="Diff.GoToChangePopup" timestamp="1591183686768">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
@@ -243,10 +252,10 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="57" y="54" key="DiffContextDialog/0.0.1280.770@0.0.1280.770" timestamp="1591183694894" />
-    <state x="382" y="174" key="EnvironmentVariablesDialog" timestamp="1591193681217">
+    <state x="382" y="174" key="EnvironmentVariablesDialog" timestamp="1591194421700">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="382" y="174" key="EnvironmentVariablesDialog/0.0.1280.770@0.0.1280.770" timestamp="1591193681217" />
+    <state x="382" y="174" key="EnvironmentVariablesDialog/0.0.1280.770@0.0.1280.770" timestamp="1591194421700" />
     <state width="1236" height="187" key="GridCell.Tab.0.bottom" timestamp="1591190695033">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
@@ -291,10 +300,10 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="141" y="16" key="SettingsEditor/0.0.1280.770@0.0.1280.770" timestamp="1591172066285" />
-    <state x="169" y="113" key="Vcs.Push.Dialog.v2" timestamp="1591190746881">
+    <state x="169" y="113" key="Vcs.Push.Dialog.v2" timestamp="1591193839645">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="169" y="113" key="Vcs.Push.Dialog.v2/0.0.1280.770@0.0.1280.770" timestamp="1591190746881" />
+    <state x="169" y="113" key="Vcs.Push.Dialog.v2/0.0.1280.770@0.0.1280.770" timestamp="1591193839645" />
     <state x="449" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591174167199">
       <screen x="0" y="0" width="1280" height="770" />
     </state>

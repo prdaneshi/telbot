@@ -50,7 +50,7 @@ def run(updater):
     elif mode == 'host':
         try:
             PORT = int(os.environ.get("PORT", "8443"))
-            HEROKU_APP_NAME = os.environ.get("HEROKKU__APP_NAME")
+            HEROKU_APP_NAME = os.environ.get("HEROKU__APP_NAME")
             updater.start_webhook(listen="0.0.0.0",
                                   port=PORT,
                                   url_path=token)
