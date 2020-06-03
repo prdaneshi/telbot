@@ -85,19 +85,24 @@ def close(update, context):
 # -----------------------------------------------------------------
 
 
-def start(update, context):
+def connect(update, context):
  #   chat_id = update.message.chat.id
  #   bot.sendMessage(chat_id, 'salam')
     cur.execute('SELECT version()')
     db_version = cur.fetchone()
     update.message.reply_text(str(db_version) + '/close')
 
+def start(update, context):
+    logger.info("User {} started bot".format(update.effective_user["id"]))
+    update.message.reply_text('good start')
 
-#cur = conn.cursor()
+
 run(updater)
-start_command = CommandHandler('connect', start)
+start_command = CommandHandler('start', start)
+connect_command = CommandHandler('connect', connect)
 finish_command = CommandHandler('close', close)
 updater.dispatcher.add_handler(start_command)
+updater.dispatcher.add_handler(connect_command)
 updater.dispatcher.add_handler(finish_command)
 updater.dispatcher.add_error_handler(error)
 
