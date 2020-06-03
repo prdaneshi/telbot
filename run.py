@@ -2,7 +2,7 @@ from telegram.ext import Updater, CommandHandler
 import psycopg2
 import logging
 import os
-
+# logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -17,32 +17,47 @@ REQUEST_KWARGS={
     'proxy_url': 'socks5://127.0.0.1:9050',
     }
 
-updater = Updater('1168577282:AAF6gv-0KG4ZCiTMykR8X_vW9GLee07g1W8', use_context=True)
+
+mode = os.getenv("WORKTYPE")
+token = os.getenv("TOKEN")
+
+updater = Updater(token, use_context=True)
 '''
 If we use use_context=True in Updater, we should pass arguments to the function this way:
 def greet_user(`update: Update, context: CallbackContext`):
     update.message.reply_text('hello')
 '''
 
+conn = psycopg2.connect(host="localhost", database="telbotdb", user="telbot", password="telbotpass")
+def run(updater):
+    if mode == 'local':
+        try:
+            updater.start_polling()
+            print("Connecting to Database")
+            conn = psycopg2.connect(host="localhost", database="telbotdb", user="telbot", password="telbotpass")
+            print("Connected")
+        except(Exception, psycopg2.DatabaseError) as error:
+            print(error)
+    elif mode == 'host':
+        try:
+            PORT = int(os.environ.get("PORT", "8443"))
+            HEROKU_APP_NAME = os.environ.get("HEROKKU__APP_NAME")
+            updater.start_webhook(listen="0.0.0.0",
+                                  port=PORT,
+                                  url_path=token)
+            updater.bot.set_webhook("https://{}.herokuapp.com/{}".format(HEROKU_APP_NAME, token))
 
-if os.environ["worktype"] == 'local':
-    try:
-        print("Connecting to Database")
-        conn = psycopg2.connect(host="localhost", database="telbotdb", user="telbot", password="telbotpass")
-        cur = conn.cursor()
-    except(Exception, psycopg2.DatabaseError) as error:
-        print(error)
-elif os.environ["worktype"] == 'host' :
-    try:
-        print("Connecting to Database")
-        conn = psycopg2.connect(host="ec2-54-243-252-232.compute-1.amazonaws.com",
-                                database="deni53okj1kfg0",
-                                user="slwywneiwysvah",
-                                password="81f78c5ae27dcbbf381e572dfb257b9a41c01c2f3952a3280fad77cb70e7ff59")
-        cur = conn.cursor()
-    except(Exception, psycopg2.DatabaseError) as error:
-        print(error)
-
+            print("Connecting to Database")
+            conn = psycopg2.connect(host="ec2-54-243-252-232.compute-1.amazonaws.com",
+                                    database="deni53okj1kfg0",
+                                    user="slwywneiwysvah",
+                                    password="81f78c5ae27dcbbf381e572dfb257b9a41c01c2f3952a3280fad77cb70e7ff59")
+            cur = conn.cursor()
+        except(Exception, psycopg2.DatabaseError) as error:
+            print(error)
+    else:
+        logger.error("Mode is has not een set")
+cur = conn.cursor()
 
 
 # ------------------------------------------------------------------
@@ -66,12 +81,14 @@ def start(update, context):
     update.message.reply_text(str(db_version) + '/close')
 
 
+#cur = conn.cursor()
+run(updater)
 start_command = CommandHandler('connect', start)
 finish_command = CommandHandler('close', close)
 updater.dispatcher.add_handler(start_command)
 updater.dispatcher.add_handler(finish_command)
 updater.dispatcher.add_error_handler(error)
-updater.start_polling()
+
 updater.idle()
 
 

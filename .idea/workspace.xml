@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d774178f-30ff-4db2-a8e5-85b1b9bc13e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
@@ -80,7 +78,8 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="worktype" value="local" />
+        <env name="WORKTYPE" value="local" />
+        <env name="TOKEN" value="1168577282:AAF6gv-0KG4ZCiTMykR8X_vW9GLee07g1W8" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -119,42 +118,79 @@
       <workItem from="1587481552765" duration="1191000" />
       <workItem from="1589696280322" duration="445000" />
       <workItem from="1591088404153" duration="9936000" />
-      <workItem from="1591171375426" duration="2310000" />
+      <workItem from="1591171375426" duration="6972000" />
     </task>
+    <task id="LOCAL-00001" summary="add worktype">
+      <created>1591174139363</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591174139363</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add worktype" />
+    <option name="LAST_COMMIT_MESSAGE" value="add worktype" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="42" key="#Deployment" timestamp="1591172079600">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="232" y="42" key="#Deployment/0.0.1280.770@0.0.1280.770" timestamp="1591172079600" />
-    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591173188507">
+    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591181064320">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.770@0.0.1280.770" timestamp="1591173188507" />
-    <state x="382" y="174" key="EnvironmentVariablesDialog" timestamp="1591172165162">
+    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.770@0.0.1280.770" timestamp="1591181064320" />
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1591174135529">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="382" y="174" key="EnvironmentVariablesDialog/0.0.1280.770@0.0.1280.770" timestamp="1591172165162" />
-    <state width="1236" height="188" key="GridCell.Tab.0.bottom" timestamp="1591174044168">
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.770@0.0.1280.770" timestamp="1591174135529" />
+    <state x="382" y="174" key="EnvironmentVariablesDialog" timestamp="1591181063261">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="1236" height="188" key="GridCell.Tab.0.bottom/0.0.1280.770@0.0.1280.770" timestamp="1591174044168" />
-    <state width="1236" height="188" key="GridCell.Tab.0.center" timestamp="1591174044167">
+    <state x="382" y="174" key="EnvironmentVariablesDialog/0.0.1280.770@0.0.1280.770" timestamp="1591181063261" />
+    <state width="580" height="182" key="GridCell.Tab.0.bottom" timestamp="1591183031823">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="1236" height="188" key="GridCell.Tab.0.center/0.0.1280.770@0.0.1280.770" timestamp="1591174044167" />
-    <state width="1236" height="188" key="GridCell.Tab.0.left" timestamp="1591174044167">
+    <state width="580" height="182" key="GridCell.Tab.0.bottom/0.0.1280.770@0.0.1280.770" timestamp="1591183031823" />
+    <state width="580" height="182" key="GridCell.Tab.0.center" timestamp="1591183031823">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="1236" height="188" key="GridCell.Tab.0.left/0.0.1280.770@0.0.1280.770" timestamp="1591174044167" />
-    <state width="1236" height="188" key="GridCell.Tab.0.right" timestamp="1591174044168">
+    <state width="580" height="182" key="GridCell.Tab.0.center/0.0.1280.770@0.0.1280.770" timestamp="1591183031823" />
+    <state width="580" height="182" key="GridCell.Tab.0.left" timestamp="1591183031823">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="1236" height="188" key="GridCell.Tab.0.right/0.0.1280.770@0.0.1280.770" timestamp="1591174044168" />
+    <state width="580" height="182" key="GridCell.Tab.0.left/0.0.1280.770@0.0.1280.770" timestamp="1591183031823" />
+    <state width="580" height="182" key="GridCell.Tab.0.right" timestamp="1591183031823">
+      <screen x="0" y="0" width="1280" height="770" />
+    </state>
+    <state width="580" height="182" key="GridCell.Tab.0.right/0.0.1280.770@0.0.1280.770" timestamp="1591183031823" />
     <state width="1236" height="159" key="GridCell.Tab.1.bottom" timestamp="1591105602277">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
@@ -175,10 +211,18 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1280.770@0.0.1280.770" timestamp="1591104993153" />
+    <state x="521" y="106" key="RollbackChangesDialog" timestamp="1591174173944">
+      <screen x="0" y="0" width="1280" height="770" />
+    </state>
+    <state x="521" y="106" key="RollbackChangesDialog/0.0.1280.770@0.0.1280.770" timestamp="1591174173944" />
     <state x="141" y="16" key="SettingsEditor" timestamp="1591172066285">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="141" y="16" key="SettingsEditor/0.0.1280.770@0.0.1280.770" timestamp="1591172066285" />
+    <state x="449" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591174167199">
+      <screen x="0" y="0" width="1280" height="770" />
+    </state>
+    <state x="449" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.770@0.0.1280.770" timestamp="1591174167199" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -188,7 +232,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/telbot$run.coverage" NAME="run Coverage Results" MODIFIED="1591173618292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/telbot$run.coverage" NAME="run Coverage Results" MODIFIED="1591183031793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/My_Game$run.coverage" NAME="run Coverage Results" MODIFIED="1591105587190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
