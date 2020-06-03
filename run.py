@@ -62,6 +62,7 @@ def run(updater):
                                     user="slwywneiwysvah",
                                     password="81f78c5ae27dcbbf381e572dfb257b9a41c01c2f3952a3280fad77cb70e7ff59")
             cur = conn.cursor()
+            print("Connected")
         except(Exception, psycopg2.DatabaseError) as error:
             print(error)
     else:
