@@ -1,6 +1,7 @@
 from telegram.ext import Updater, CommandHandler
 import psycopg2
 import logging
+import os
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
@@ -23,19 +24,28 @@ def greet_user(`update: Update, context: CallbackContext`):
     update.message.reply_text('hello')
 '''
 
-conn = None
 
-# ------------------------------------------------------------------
-
-
-def connect():
+if os.environ["worktype"] == 'local':
     try:
         print("Connecting to Database")
         conn = psycopg2.connect(host="localhost", database="telbotdb", user="telbot", password="telbotpass")
-        global cur
         cur = conn.cursor()
     except(Exception, psycopg2.DatabaseError) as error:
         print(error)
+elif os.environ["worktype"] == 'host' :
+    try:
+        print("Connecting to Database")
+        conn = psycopg2.connect(host="ec2-54-243-252-232.compute-1.amazonaws.com",
+                                database="deni53okj1kfg0",
+                                user="slwywneiwysvah",
+                                password="81f78c5ae27dcbbf381e572dfb257b9a41c01c2f3952a3280fad77cb70e7ff59")
+        cur = conn.cursor()
+    except(Exception, psycopg2.DatabaseError) as error:
+        print(error)
+
+
+
+# ------------------------------------------------------------------
 
 
 def close(update, context):
@@ -49,7 +59,6 @@ def close(update, context):
 
 
 def start(update, context):
-    connect()
  #   chat_id = update.message.chat.id
  #   bot.sendMessage(chat_id, 'salam')
     cur.execute('SELECT version()')

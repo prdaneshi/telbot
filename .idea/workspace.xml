@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d774178f-30ff-4db2-a8e5-85b1b9bc13e6" name="Default Changelist" comment="" />
+    <list default="true" id="d774178f-30ff-4db2-a8e5-85b1b9bc13e6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +57,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1a1Plq9WMOLBoUTNWpiwvXSxEWp" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -61,8 +69,9 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
   </component>
   <component name="RunManager">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -71,6 +80,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="worktype" value="local" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -109,6 +119,7 @@
       <workItem from="1587481552765" duration="1191000" />
       <workItem from="1589696280322" duration="445000" />
       <workItem from="1591088404153" duration="9936000" />
+      <workItem from="1591171375426" duration="2310000" />
     </task>
     <servers />
   </component>
@@ -116,26 +127,34 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591104884963">
+    <state x="232" y="42" key="#Deployment" timestamp="1591172079600">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.770@0.0.1280.770" timestamp="1591104884963" />
-    <state width="1236" height="159" key="GridCell.Tab.0.bottom" timestamp="1591105587392">
+    <state x="232" y="42" key="#Deployment/0.0.1280.770@0.0.1280.770" timestamp="1591172079600" />
+    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591173188507">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="1236" height="159" key="GridCell.Tab.0.bottom/0.0.1280.770@0.0.1280.770" timestamp="1591105587392" />
-    <state width="1236" height="159" key="GridCell.Tab.0.center" timestamp="1591105587392">
+    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.770@0.0.1280.770" timestamp="1591173188507" />
+    <state x="382" y="174" key="EnvironmentVariablesDialog" timestamp="1591172165162">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="1236" height="159" key="GridCell.Tab.0.center/0.0.1280.770@0.0.1280.770" timestamp="1591105587392" />
-    <state width="1236" height="159" key="GridCell.Tab.0.left" timestamp="1591105587392">
+    <state x="382" y="174" key="EnvironmentVariablesDialog/0.0.1280.770@0.0.1280.770" timestamp="1591172165162" />
+    <state width="1236" height="188" key="GridCell.Tab.0.bottom" timestamp="1591174044168">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="1236" height="159" key="GridCell.Tab.0.left/0.0.1280.770@0.0.1280.770" timestamp="1591105587392" />
-    <state width="1236" height="159" key="GridCell.Tab.0.right" timestamp="1591105587392">
+    <state width="1236" height="188" key="GridCell.Tab.0.bottom/0.0.1280.770@0.0.1280.770" timestamp="1591174044168" />
+    <state width="1236" height="188" key="GridCell.Tab.0.center" timestamp="1591174044167">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="1236" height="159" key="GridCell.Tab.0.right/0.0.1280.770@0.0.1280.770" timestamp="1591105587392" />
+    <state width="1236" height="188" key="GridCell.Tab.0.center/0.0.1280.770@0.0.1280.770" timestamp="1591174044167" />
+    <state width="1236" height="188" key="GridCell.Tab.0.left" timestamp="1591174044167">
+      <screen x="0" y="0" width="1280" height="770" />
+    </state>
+    <state width="1236" height="188" key="GridCell.Tab.0.left/0.0.1280.770@0.0.1280.770" timestamp="1591174044167" />
+    <state width="1236" height="188" key="GridCell.Tab.0.right" timestamp="1591174044168">
+      <screen x="0" y="0" width="1280" height="770" />
+    </state>
+    <state width="1236" height="188" key="GridCell.Tab.0.right/0.0.1280.770@0.0.1280.770" timestamp="1591174044168" />
     <state width="1236" height="159" key="GridCell.Tab.1.bottom" timestamp="1591105602277">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
@@ -156,21 +175,12 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1280.770@0.0.1280.770" timestamp="1591104993153" />
-    <state x="141" y="16" key="SettingsEditor" timestamp="1587480102755">
+    <state x="141" y="16" key="SettingsEditor" timestamp="1591172066285">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="141" y="16" key="SettingsEditor/0.0.1280.770@0.0.1280.770" timestamp="1587480102755" />
+    <state x="141" y="16" key="SettingsEditor/0.0.1280.770@0.0.1280.770" timestamp="1591172066285" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/run.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="conn" language="Python" />
@@ -178,6 +188,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/telbot$run.coverage" NAME="run Coverage Results" MODIFIED="1591173618292" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/My_Game$run.coverage" NAME="run Coverage Results" MODIFIED="1591105587190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
