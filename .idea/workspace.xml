@@ -2,26 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d774178f-30ff-4db2-a8e5-85b1b9bc13e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/mydatabase.J7NGgg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/mydatabase.J7NGgg/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/mydatabase.J7NGgg/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/mydatabase.J7NGgg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/mydatabase.J7NGgg/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/mydatabase.J7NGgg/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/telbotdb.Sk3Crg/schema/information_schema.FNRwLQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/telbotdb.Sk3Crg/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/telbotdb.Sk3Crg/schema/information_schema.FNRwLQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/telbotdb.Sk3Crg/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/telbotdb.Sk3Crg/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/telbotdb.Sk3Crg/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/telbotdb.Sk3Crg/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/telbotdb.Sk3Crg/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/telbotdb.Sk3Crg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/c51c25fe-b9e0-4e1b-b62d-9dfd453fbf9b/storage_v2/_src_/database/telbotdb.Sk3Crg/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
@@ -84,7 +64,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
+    <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
   </component>
   <component name="RunManager">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -157,7 +137,7 @@
       <workItem from="1591088404153" duration="9936000" />
       <workItem from="1591171375426" duration="25097000" />
       <workItem from="1591551480927" duration="2452000" />
-      <workItem from="1591623812292" duration="3245000" />
+      <workItem from="1591623812292" duration="19556000" />
     </task>
     <task id="LOCAL-00001" summary="add worktype">
       <created>1591174139363</created>
@@ -236,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591194623683</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="added def creatDb for database postgresql">
+      <created>1591684938412</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1591684938412</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +265,8 @@
     <MESSAGE value="&quot;host&quot; added to str" />
     <MESSAGE value="solved heroku_app_name" />
     <MESSAGE value="solved2 heroku_app_name" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved2 heroku_app_name" />
+    <MESSAGE value="added def creatDb for database postgresql" />
+    <option name="LAST_COMMIT_MESSAGE" value="added def creatDb for database postgresql" />
   </component>
   <component name="WindowStateProjectService">
     <state x="232" y="42" key="#Deployment" timestamp="1591172079600">
@@ -297,14 +285,14 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="232" y="42" key="#SQL_Dialects/0.0.1280.770@0.0.1280.770" timestamp="1591552353525" />
-    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591194422599">
+    <state x="23" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591686424232">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="102" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.770@0.0.1280.770" timestamp="1591194422599" />
-    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1591194623038">
+    <state x="23" y="21" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.770@0.0.1280.770" timestamp="1591686424232" />
+    <state x="265" y="0" key="CommitChangelistDialog2" timestamp="1591684935569">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.770@0.0.1280.770" timestamp="1591194623038" />
+    <state x="265" y="0" key="CommitChangelistDialog2/0.0.1280.770@0.0.1280.770" timestamp="1591684935569" />
     <state width="508" height="442" key="Diff.GoToChangePopup" timestamp="1591183686768">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
@@ -313,42 +301,42 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="57" y="54" key="DiffContextDialog/0.0.1280.770@0.0.1280.770" timestamp="1591183694894" />
-    <state x="382" y="174" key="EnvironmentVariablesDialog" timestamp="1591194421700">
+    <state x="382" y="174" key="EnvironmentVariablesDialog" timestamp="1591686414402">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="382" y="174" key="EnvironmentVariablesDialog/0.0.1280.770@0.0.1280.770" timestamp="1591194421700" />
-    <state width="844" height="188" key="GridCell.Tab.0.bottom" timestamp="1591684041700">
+    <state x="382" y="174" key="EnvironmentVariablesDialog/0.0.1280.770@0.0.1280.770" timestamp="1591686414402" />
+    <state width="1236" height="159" key="GridCell.Tab.0.bottom" timestamp="1591707773620">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="844" height="188" key="GridCell.Tab.0.bottom/0.0.1280.770@0.0.1280.770" timestamp="1591684041700" />
-    <state width="844" height="188" key="GridCell.Tab.0.center" timestamp="1591684041700">
+    <state width="1236" height="159" key="GridCell.Tab.0.bottom/0.0.1280.770@0.0.1280.770" timestamp="1591707773620" />
+    <state width="1236" height="159" key="GridCell.Tab.0.center" timestamp="1591707773620">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="844" height="188" key="GridCell.Tab.0.center/0.0.1280.770@0.0.1280.770" timestamp="1591684041700" />
-    <state width="844" height="188" key="GridCell.Tab.0.left" timestamp="1591684041700">
+    <state width="1236" height="159" key="GridCell.Tab.0.center/0.0.1280.770@0.0.1280.770" timestamp="1591707773620" />
+    <state width="1236" height="159" key="GridCell.Tab.0.left" timestamp="1591707773620">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="844" height="188" key="GridCell.Tab.0.left/0.0.1280.770@0.0.1280.770" timestamp="1591684041700" />
-    <state width="844" height="188" key="GridCell.Tab.0.right" timestamp="1591684041700">
+    <state width="1236" height="159" key="GridCell.Tab.0.left/0.0.1280.770@0.0.1280.770" timestamp="1591707773620" />
+    <state width="1236" height="159" key="GridCell.Tab.0.right" timestamp="1591707773620">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="844" height="188" key="GridCell.Tab.0.right/0.0.1280.770@0.0.1280.770" timestamp="1591684041700" />
-    <state width="1236" height="159" key="GridCell.Tab.1.bottom" timestamp="1591553955487">
+    <state width="1236" height="159" key="GridCell.Tab.0.right/0.0.1280.770@0.0.1280.770" timestamp="1591707773620" />
+    <state width="1236" height="159" key="GridCell.Tab.1.bottom" timestamp="1591707773620">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="1236" height="159" key="GridCell.Tab.1.bottom/0.0.1280.770@0.0.1280.770" timestamp="1591553955487" />
-    <state width="1236" height="159" key="GridCell.Tab.1.center" timestamp="1591553955487">
+    <state width="1236" height="159" key="GridCell.Tab.1.bottom/0.0.1280.770@0.0.1280.770" timestamp="1591707773620" />
+    <state width="1236" height="159" key="GridCell.Tab.1.center" timestamp="1591707773620">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="1236" height="159" key="GridCell.Tab.1.center/0.0.1280.770@0.0.1280.770" timestamp="1591553955487" />
-    <state width="1236" height="159" key="GridCell.Tab.1.left" timestamp="1591553955487">
+    <state width="1236" height="159" key="GridCell.Tab.1.center/0.0.1280.770@0.0.1280.770" timestamp="1591707773620" />
+    <state width="1236" height="159" key="GridCell.Tab.1.left" timestamp="1591707773620">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="1236" height="159" key="GridCell.Tab.1.left/0.0.1280.770@0.0.1280.770" timestamp="1591553955487" />
-    <state width="1236" height="159" key="GridCell.Tab.1.right" timestamp="1591553955487">
+    <state width="1236" height="159" key="GridCell.Tab.1.left/0.0.1280.770@0.0.1280.770" timestamp="1591707773620" />
+    <state width="1236" height="159" key="GridCell.Tab.1.right" timestamp="1591707773620">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state width="1236" height="159" key="GridCell.Tab.1.right/0.0.1280.770@0.0.1280.770" timestamp="1591553955487" />
+    <state width="1236" height="159" key="GridCell.Tab.1.right/0.0.1280.770@0.0.1280.770" timestamp="1591707773620" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1591104993153">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
@@ -357,20 +345,29 @@
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="521" y="106" key="RollbackChangesDialog/0.0.1280.770@0.0.1280.770" timestamp="1591174173944" />
-    <state x="141" y="16" key="SettingsEditor" timestamp="1591172066285">
+    <state x="129" y="27" key="SettingsEditor" timestamp="1591688748097">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="141" y="16" key="SettingsEditor/0.0.1280.770@0.0.1280.770" timestamp="1591172066285" />
-    <state x="169" y="113" key="Vcs.Push.Dialog.v2" timestamp="1591194632126">
+    <state x="129" y="27" key="SettingsEditor/0.0.1280.770@0.0.1280.770" timestamp="1591688748097" />
+    <state x="169" y="113" key="Vcs.Push.Dialog.v2" timestamp="1591684952412">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
-    <state x="169" y="113" key="Vcs.Push.Dialog.v2/0.0.1280.770@0.0.1280.770" timestamp="1591194632126" />
+    <state x="169" y="113" key="Vcs.Push.Dialog.v2/0.0.1280.770@0.0.1280.770" timestamp="1591684952412" />
     <state x="449" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591174167199">
       <screen x="0" y="0" width="1280" height="770" />
     </state>
     <state x="449" y="301" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.770@0.0.1280.770" timestamp="1591174167199" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/run.py</url>
+          <line>141</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="conn" language="Python" />
@@ -378,7 +375,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/telbot$run.coverage" NAME="run Coverage Results" MODIFIED="1591553766385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/telbot$run.coverage" NAME="run Coverage Results" MODIFIED="1591707773587" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/My_Game$run.coverage" NAME="run Coverage Results" MODIFIED="1591105587190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
