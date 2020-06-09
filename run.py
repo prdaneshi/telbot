@@ -29,47 +29,41 @@ def greet_user(`update: Update, context: CallbackContext`):
 '''
 
 
-class Connect:
-    def __init__(self, host, database, user, password):
-        self = psycopg2.connect(host=host, database=database, user=user, password=password)
-
-
-
-
 def run(updater):
-    global conn, cur
-    if mode == 'local':
-        try:
+    global conn,cur
+    conn = None
+    if not conn:
+        if mode == 'local':
             updater.start_polling()
-            print("Connecting to Database")
-            conn = psycopg2.connect(host="localhost", database="telbotdb", user="telbot", password="telbotpass")
-            cur = conn.cursor()
-            print("Connected")
-        except(Exception, psycopg2.DatabaseError) as error:
-            print(error)
-    elif mode == 'host':
-        try:
-            PORT = int(os.environ.get("PORT", "8443"))
-            HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
-            updater.start_webhook(listen="0.0.0.0",
-                                  port=PORT,
-                                  url_path=token)
-            updater.bot.set_webhook("https://{}.herokuapp.com/{}".format(HEROKU_APP_NAME, token))
+            try:
+                print("Connecting to Database")
+                conn = psycopg2.connect(host="localhost", database="telbotdb", user="telbot", password="telbotpass")
+                cur = conn.cursor()
+                print("Connected")
+            except(Exception, psycopg2.DatabaseError) as error:
+                print(error)
+        elif mode == 'host':
+            try:
+                PORT = int(os.environ.get("PORT", "8443"))
+                HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
+                updater.start_webhook(listen="0.0.0.0",
+                                      port=PORT,
+                                      url_path=token)
+                updater.bot.set_webhook("https://{}.herokuapp.com/{}".format(HEROKU_APP_NAME, token))
 
-            print("Connecting to host Database")
-            conn = psycopg2.connect(host="ec2-54-243-252-232.compute-1.amazonaws.com",
-                                    database="deni53okj1kfg0",
-                                    user="slwywneiwysvah",
-                                    password="81f78c5ae27dcbbf381e572dfb257b9a41c01c2f3952a3280fad77cb70e7ff59")
-            cur = conn.cursor()
-            print("Connected host database")
-        except(Exception, psycopg2.DatabaseError) as error:
-            print(error)
+                print("Connecting to host Database")
+                conn = psycopg2.connect(host="ec2-54-243-252-232.compute-1.amazonaws.com",
+                                        database="deni53okj1kfg0",
+                                        user="slwywneiwysvah",
+                                        password="81f78c5ae27dcbbf381e572dfb257b9a41c01c2f3952a3280fad77cb70e7ff59")
+                cur = conn.cursor()
+                print("Connected host database")
+            except(Exception, psycopg2.DatabaseError) as error:
+                print(error)
+        else:
+            logger.error("Mode is has not een set")
     else:
-        logger.error("Mode is has not een set")
-
-
-
+        print("has connected")
 
 
 # ------------------------------------------------------------------
@@ -84,8 +78,29 @@ def close(update, context):
 
 # -----------------------------------------------------------------
 
+def createDb(update, context):
+    try:
+        cur.execute(''' CREATE TABLE public."User"(
+        "Name"  "char",
+        "Id"    "char"  NOT NULL,
+        "Gender" bool   NOT NULL,
+        "City"  "char"  NOT NULL,
+        "ChatId" integer NOT NULL,
+        "Birth"  integer NOT NULL);
+    ''')
+        print("database created")
+    except(Exception, psycopg2.DatabaseError) as error:
+        print(error)
+
 
 def connect(update, context):
+ #   chat_id = update.message.chat.id
+ #   bot.sendMessage(chat_id, 'salam')
+    cur.execute('SELECT version()')
+    db_version = cur.fetchone()
+    update.message.reply_text(str(db_version) + '/close')
+
+def creat(update, context):
  #   chat_id = update.message.chat.id
  #   bot.sendMessage(chat_id, 'salam')
     cur.execute('SELECT version()')
@@ -101,9 +116,11 @@ run(updater)
 start_command = CommandHandler('start', start)
 connect_command = CommandHandler('connect', connect)
 finish_command = CommandHandler('close', close)
+create_command = CommandHandler('createDb', createDb)
 updater.dispatcher.add_handler(start_command)
 updater.dispatcher.add_handler(connect_command)
 updater.dispatcher.add_handler(finish_command)
+updater.dispatcher.add_handler(create_command)
 updater.dispatcher.add_error_handler(error)
 
 updater.idle()
