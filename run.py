@@ -1,5 +1,5 @@
-from telegram.ext import Updater, CommandHandler
-from telegram import bot
+from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, ConversationHandler, MessageHandler, Filters
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, KeyboardButton
 import psycopg2
 import logging
 import os
@@ -70,20 +70,21 @@ def close(update, context):
 # -----------------------------------------------------------------
 
 
-def createDb(update, context):
+def createTb(update, context):
     try:
         cur.execute(''' 
     CREATE TABLE public."user"(
-    id integer NOT NULL GENERATED ALWAYS AS IDENTITY,
-    name "char" NOT NULL,
-    birth smallint NOT NULL,
-    city "char" NOT NULL,
-    gender boolean NOT NULL,
-    chatId integer NOT NULL,
+    id serial,
+    name "char",
+    birth smallint,
+    city "char",
+    gender boolean,
+    chatId integer,
     PRIMARY KEY (id) );
     ''')
         print("database created")
     except(Exception, psycopg2.DatabaseError) as error:
+        cur.execute("ROLLBACK;")
         print(error)
 
 
@@ -122,25 +123,50 @@ def connect(update, context):
     update.message.reply_text(str(db_version) + '/close')
 
 
-def creat(update, context):
+def deleteTb(update, context):
     global cur
-    cur.execute('SELECT version()')
+    try:
+        cur.execute("DROP TABLE public.user")
+        print("DATABASE deleted")
+        update.message.reply_text("DATABASE deleted")
+    except(Exception, psycopg2.DatabaseError) as error:
+        print(error)
+        update.message.reply_text(str(error))
+        cur.execute("ROLLBACK;")
     db_version = cur.fetchone()
-    update.message.reply_text(str(db_version) + '/close')
 
 
 def start(update, context):
     global cur
-    update.message.reply_text('good start, what is your name?')
-    cur.execute("ROLLBACK;")
+#    cur.execute("ROLLBACK;")
     sql = "SELECT EXISTS (" \
           "SELECT FROM public.user " \
-            "WHERE chatId = {} )"
+          "WHERE chatId = {})"
     try:
         cur.execute(sql.format(update.message.chat.id))
         user = cur.fetchone()
         if False in user:
-            update.message.reply_text("You are not a member")
+            # update.message.reply_text("{} welcome to our bot.\nplease send me your birth year\n and press next".format(update.message.chat.first_name))
+            # keyboard = [[InlineKeyboardButton("Option 1", callback_data='1'),
+            #              InlineKeyboardButton("Option 2", callback_data='2')],
+            #             [InlineKeyboardButton("Option 3", callback_data='3')]]
+            keyboard = [
+                [InlineKeyboardButton("Next", callback_data=1)]
+            ]
+            reply_markup = InlineKeyboardMarkup(keyboard)
+            update.message.reply_text("{} welcome to our bot.\n"
+                                      "press next if u want to join us".format(update.message.chat.first_name),
+                                      reply_markup=reply_markup)
+        else:
+            keyboard = [
+                [InlineKeyboardButton("Next", callback_data=2)]
+            ]
+            reply_markup = InlineKeyboardMarkup(keyboard)
+            update.message.reply_text("{} welcome back to our bot.\n"
+                                      "press next if u want to join us".format(update.message.chat.first_name),
+                                      reply_markup=reply_markup)
+        return 0
+
     except(Exception, psycopg2.DatabaseError) as error:
         print(error)
         cur.execute("ROLLBACK;")
@@ -148,27 +174,128 @@ def start(update, context):
     help(update, context)
 
 
-def help(update, contex):
+def first(update, context):
+    global cur
+    if update.callback_query:
+        query = update.callback_query
+        if update.callback_query.data == '1':
+
+            # keyboard = [
+            #     [InlineKeyboardButton("Next", callback_data="2")]
+            # ]
+            # reply_markup = InlineKeyboardMarkup(keyboard)
+            query.edit_message_text(text="Good Choice")
+            # query.edit_message_reply_markup(reply_markup=reply_markup)
+            sql = "INSERT INTO public.user" \
+                  "(name, chatid)" \
+                  "VALUES" \
+                  "('{}',{})"
+            cur.execute(sql.format(str(query.message.chat.first_name), query.message.chat.id))
+        # keyboard = [
+        #     [KeyboardButton("Next", callback_data=str(SECOND))]
+        # ]
+        # reply_markup = ReplyKeyboardMarkup(keyboard)
+        # query.edit_message_text(text="first CallbackQueryHandler")
+        # query.bot.sendMessage(chat_id=query.message.chat.id,
+        #                       text="send me your name and press next",
+        #                        reply_markup=reply_markup)
+
+            keyboard = [
+                [InlineKeyboardButton("Next", callback_data=2)]
+            ]
+            reply_markup = InlineKeyboardMarkup(keyboard)
+            query.bot.sendMessage(chat_id=query.message.chat.id,
+                                  text="Now send me your birth year\n"
+                                  "and press next",
+                                  reply_markup=reply_markup)
+        elif update.callback_query.data == '2':
+            query.edit_message_text(text="Nice to meet u")
+            sql = "SELECT EXISTS (" \
+                  "SELECT FROM public.user " \
+                  "WHERE chatId = {}" \
+                  "AND birth != NULL )"
+            try:
+                cur.execute(sql.format(query.message.chat.id))
+                user = cur.fetchone()
+                if False in user:
+                    keyboard = [
+                        [InlineKeyboardButton("Next", callback_data=3)]
+                    ]
+                    reply_markup = InlineKeyboardMarkup(keyboard)
+                    query.bot.sendMessage(chat_id=query.message.chat.id,
+                                          text="{} it seems u dont entered your birth year.\n"
+                                          "send me your birth year and then \n"
+                                          "press next".format(query.message.chat.first_name),
+                                          reply_markup=reply_markup)
+            except(Exception, psycopg2.DatabaseError) as error:
+                print(error)
+                cur.execute("ROLLBACK;")
+                update.message.reply_text(str(error))
+        elif update.callback_query.data == '3':
+            return 1
+
+    elif update.message:
+        try:
+            if int(update.message.text) > 1300:
+                sql = "UPDATE public.user " \
+                      "SET birth = {} " \
+                      "WHERE chatid = {};"
+                cur.execute(sql.format(int(update.message.text), update.message.chat.id))
+                cur.execute("COMMIT;")
+                update.message.reply_text("Your birth saved!! :/")
+        except(Exception, psycopg2.DatabaseError) as error:
+            print(error)
+            cur.execute("ROLLBACK;")
+            update.message.reply_text(str(error))
+            update.message.reply_text("Ahmagh!! :/")
+    else:
+        update.message.reply_text("Wrong answer, please send me your birth year")
+
+
+def second(update, context):
+    query = update.callback_query
+#    query.edit_message_text(text="Second CallbackQueryHandler")
+    query.bot.sendMessage(chat_id=query.message.chat.id,
+                          text="send me your name and press next")
+    return
+
+
+def help(update, context):
     update.message.reply_text('/help '
                               '/start '
                               '/connect '
+                              '/deleteTb '
                               '/close '
-                              '/createDb ')
+                              '/createTb ')
+
 
 run(updater)
+
+conv_handler = ConversationHandler(
+    entry_points=[CommandHandler('start', start)],
+    states={
+        0: [CallbackQueryHandler(first), MessageHandler(Filters.all, first)],
+        1: [CallbackQueryHandler(second)]
+    },
+    fallbacks=[CommandHandler('start', start)]
+)
+
 help_command =  CommandHandler('help', help)
-start_command = CommandHandler('start', start)
+#start_command = CommandHandler('start', start)
+delete_command = CommandHandler('deleteTb', deleteTb)
 connect_command = CommandHandler('connect', connect)
 finish_command = CommandHandler('close', close)
-create_command = CommandHandler('createDb', createDb)
+create_command = CommandHandler('createTb', createTb)
 
+updater.dispatcher.add_handler(delete_command)
 updater.dispatcher.add_handler(help_command)
-updater.dispatcher.add_handler(start_command)
+#updater.dispatcher.add_handler(start_command)
 updater.dispatcher.add_handler(connect_command)
 updater.dispatcher.add_handler(finish_command)
 updater.dispatcher.add_handler(create_command)
 
 updater.dispatcher.add_error_handler(error)
+updater.dispatcher.add_handler(conv_handler)
 
 updater.idle()
 
