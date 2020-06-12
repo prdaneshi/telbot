@@ -74,7 +74,7 @@ def createDb(update, context):
     try:
         cur.execute(''' 
     CREATE TABLE public."user"(
-    id integer NOT NULL GENERATED ALWAYS AS IDENTITY,
+    id serial NOT NULL,
     name "char" NOT NULL,
     birth smallint NOT NULL,
     city "char" NOT NULL,
