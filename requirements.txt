@@ -5,7 +5,7 @@ cffi==1.14.0
 cryptography==2.9
 decorator==4.4.2
 distlib==0.3.0
-Django==3.0.6
+Django==3.1.12
 django-polls==0.1
 filelock==3.0.12
 future==0.18.2
